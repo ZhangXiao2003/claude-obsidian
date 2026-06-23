@@ -1,0 +1,5 @@
+# This vault runs on WSL/Linux/macOS. CRLF line endings break bash scripts
+# ($'\r': command not found). Force LF for shell + python so cross-platform
+# clones stay runnable. See bin/setup-mode.sh and scripts/detect-transport.sh.
+*.sh text eol=lf
+*.py text eol=lf
